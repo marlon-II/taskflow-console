@@ -20,7 +20,7 @@ public class TaskManager
 
     public bool CompleteTask(Guid id)
     {
-        var task = true;
+        var task = GetById(id);
         if (task == null)
         {
             return false;
